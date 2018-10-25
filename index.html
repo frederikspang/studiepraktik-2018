@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Studiepraktik 2018</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="container mt-5 theme-showcase" role="main">
+    <div class="jumbotron" style="min-height: 900px;">
+      <h1>Lixer!</h1>
+      <p>Indtast din tekst i feltet nedenfor. Tryk derefter på knappen for at udregne lixtallet af din tekst. </p>
+      <textarea class='form-control mb-3' style='font-size: 2rem' name="Text1" cols="80" rows="2"></textarea>
+      <p><a href="#" id="calc_button" class="btn btn-primary btn-block btn-lg" role="button">Udregn lixtal &raquo;</a></p>
+
+      <div class="row">
+        <div class="col-6">
+          <div class="card mb-2">
+            <h2 class='card-header'>Lixtal</h2>
+            <div class="card-body"><p id="lixScore_field"></p></div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card mb-2">
+            <h2 class='card-header'>Antal ord</h2>
+            <div class="card-body"><p id="numWords_field"></p></div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card mb-2">
+            <h2 class='card-header'>Punktummer</h2>
+            <div class="card-body"><p id="numPeriods_field"></p></div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card mb-2">
+            <h2 class='card-header'>Antal sætninger</h2>
+            <div class="card-body"><p id="numSentences_field"></p></div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card mb-2">
+            <h2 class='card-header'>Gennemsnitlig sætningslængde</h2>
+            <div class="card-body"><p id="avgSentenceLength_field"></p></div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card mb-2">
+            <h2 class='card-header'>Klassetrin</h2>
+            <div class="card-body"><p id="class_field"></p></div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card mb-2">
+            <h2 class='card-header'>Mest brugte ord</h2>
+            <div class="card-body"><p id="common_word"></p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
